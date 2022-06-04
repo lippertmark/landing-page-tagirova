@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
     <script src="js/show_more.js"></script>
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <title>Юрист Тигрова</title>
 </head>
 <body>
     <section class="main">
         <div class="wrapper">
             <header>
                 <img src="img/logo.svg" alt="">
-                <menu>
+                <menu class="desktop">
                     <a href="who_is.html" class="main__link">О нас</a>
-                    <a href="" class="main__link">Услуги</a>
+                    <a href="services.html" class="main__link">Услуги</a>
                     <a href="" class="main__link">Контакты</a>
                 </menu>
                 <div class="main__contacts">
@@ -26,6 +27,9 @@
                         <a class="main__mail" href="mailto:yurist.tigrova@gmail.com">yurist.tigrova@gmail.com</a>
                     </div>
                 </div>
+                <button class="main__menu mobile">
+                    <img src="img/menu.svg" alt="меню">
+                </button>
             </header>
             <div class="main__text">
                 <h1>оспаривание<br>штрафов</h1>
@@ -38,33 +42,30 @@
             <div class="price__row">
                 <div class="price__item">
                     <div class="price__title">
-                        <div class="vertical__line mgr30"></div>
                         <h2>Устная развернутая консультация</h2>
                     </div>
                     <p class="mgt30">2 000 рублей</p>
-                    <button class="btn_one mgt50">
+                    <button class="btn_one price_btn_one">
                         <p>Узнать больше</p>
                     </button>
                 </div>
-                <div class="price__item">
+                <div class="price__item price__item_right">
                     <div class="price__title">
-                        <div class="vertical__line mgr30"></div>
                         <h2>Обжалование постановления</h2>
                     </div>
                     <p class="mgt30">от 15 % от суммы обжалуемого штрафа</p>
-                    <button class="btn_one mgt50" onclick="">
+                    <button class="btn_one price_btn_one" onclick="">
                         <p>Узнать больше</p>
                     </button>
                 </div>
             </div>
-            <div class="price__row mgt70">
+            <div class="price__row">
                 <div class="price__item">
                     <div class="price__title">
-                        <div class="vertical__line mgr30"></div>
                         <h2>Устная развернутая консультация</h2>
                     </div>
                     <p class="mgt30">2 000 рублей</p>
-                    <button class="btn_one mgt50">
+                    <button class="btn_one price_btn_one">
                         <p>Узнать больше</p>
                     </button>
                 </div>
@@ -74,26 +75,43 @@
     <section class="appeal">
         <div class="wrapper">
             <div class="appeal__title mgt70">
-                <div class="vertical__line mgr30"></div>
                 <h2>Устная развернутая консультация</h2>
             </div>
             <p class="mgt50 mgb70">Обжалование постановлений о привлечении к административной ответственности по ст. 12.21.1
                 Кодекса Российской Федерации об административных правонарушениях</p>
         </div>
     </section>
-    <section class="overload">
+    <section class="overload desktop">
         <div class="wrapper">
             <div class="overload__row">
                 <img src="./img/how_to_cancel_fine.jpg" alt="изображение грузовиков" class="mgr50">
                 <div class="overload__text">
                     <div class="overload__title">
-                        <div class="vertical__line mgr30"></div>
                         <h2>МОЖНО ЛИ ИЗБЕЖАТЬ ШТРАФА ЗА ПЕРЕГРУЗ И НЕГАБАРИТ?</h2>
                     </div>
                     <p class="mgt20">
-                        Конечно можно!<br>
-                        Во избежание получения штрафа за перегруз и негабарит транспортного средства следует регулярно
-                        проводить профилактику технической и юридической стороны вопроса.
+                        <span class="text_bold">Конечно можно!</span><br>
+                        Во избежание получения штрафа <span class="text_bold">за перегруз и негабарит</span> транспортного средства следует регулярно
+                        проводить профилактику <span class="text_bold">технической и юридической стороны</span> вопроса.
+                        <br>
+                        Водитель должен четко знать все ограничения и внимательно следить за этим при погрузке машины.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="overload mobile">
+        <div class="wrapper">
+            <div class="overload__row">
+                <div class="overload__title">
+                    <h2>МОЖНО ЛИ ИЗБЕЖАТЬ ШТРАФА ЗА ПЕРЕГРУЗ И НЕГАБАРИТ?</h2>
+                </div>
+                <img src="./img/how_to_cancel_fine.jpg" alt="изображение грузовиков" class="mgr50 mgt30">
+                <div class="overload__text">
+                    <p class="mgt20">
+                        <span class="text_bold">Конечно можно!</span><br>
+                        Во избежание получения штрафа <span class="text_bold">за перегруз и негабарит</span> транспортного средства следует регулярно
+                        проводить профилактику <span class="text_bold">технической и юридической стороны</span> вопроса.
                         <br>
                         Водитель должен четко знать все ограничения и внимательно следить за этим при погрузке машины.
                     </p>
@@ -119,10 +137,9 @@
         <div class="wrapper">
             <div class="faq__question ">
                 <div class="faq__title">
-                    <div class="vertical__line mgr30"></div>
                     <h2>СРОК ОБЖАЛОВАНИЯ НАЛОЖЕННОГО ШТРАФА ?</h2>
                 </div>
-                <button class="btn_one" onclick="showAnswer('answer_one')">
+                <button class="btn_one faq__btn" onclick="showAnswer('answer_one')">
                     <p>Узнать больше</p>
                 </button>
 
@@ -144,10 +161,9 @@
             </div>
             <div class="faq__question ">
                 <div class="faq__title">
-                    <div class="vertical__line mgr30"></div>
                     <h2>В КАКИХ СЛУЧАЯХ МОЖНО ОТМЕНИТЬ ШТРАФ ?</h2>
                 </div>
-                <button class="btn_one" onclick="showAnswer('answer_two')">
+                <button class="btn_one faq__btn" onclick="showAnswer('answer_two')">
                     <p>Узнать больше</p>
                 </button>
             </div>
@@ -173,7 +189,7 @@
     </section>
     <section class="form">
         <form action='send.php' method='POST' class="form__form">
-            <h2>В КАКИХ СЛУЧАЯХ МОЖНО ОТМЕНИТЬ ШТРАФ ?</h2>
+            <h2>Оставь свои контакты и мы с тобой свяжемся ?</h2>
             <div class="pole mgt70">
                 <input name="name" type="text" placeholder="Ваше имя">
             </div>
