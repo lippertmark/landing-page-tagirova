@@ -8,10 +8,18 @@
     <title>Юрист Тигрова</title>
 </head>
 <body>
+    <menu class="mobile mobile_menu" id="mobile_menu">
+        <button onclick="hideDiv('mobile_menu')">
+            <img src="img/bx-close.svg" alt="">
+        </button>
+        <a href="who_is.html" class="main__link">О нас</a>
+        <a href="services.html" class="main__link">Услуги</a>
+        <a href="#contact" class="main__link">Контакты</a>
+    </menu>
     <section class="main">
         <div class="wrapper">
             <header>
-                <img src="img/logo.svg" alt="">
+                <img src="img/logo.svg" alt="" class="desktop">
                 <menu class="desktop">
                     <a href="who_is.html" class="main__link">О нас</a>
                     <a href="services.html" class="main__link">Услуги</a>
@@ -27,7 +35,7 @@
                         <a class="main__mail" href="mailto:yurist.tigrova@gmail.com">yurist.tigrova@gmail.com</a>
                     </div>
                 </div>
-                <button class="main__menu mobile">
+                <button class="main__menu mobile" onclick="showAnswer('mobile_menu')">
                     <img src="img/menu.svg" alt="меню">
                 </button>
             </header>
@@ -187,7 +195,7 @@
             </div>
         </div>
     </section>
-    <section class="form">
+    <section class="form" id="contact">
         <form action='send.php' method='POST' class="form__form">
             <h2>Оставь свои контакты и мы с тобой свяжемся ?</h2>
             <div class="pole mgt70">
@@ -210,7 +218,7 @@
         <div class="wrapper">
             <div class="footer__row">
                 <div class="logo">
-                    <p>Lisenkov company</p>
+                    <img src="img/logo_gray.svg" alt="логотип">
                 </div>
                 <div class="footer__contacts">
                     <div class="footer__contact">

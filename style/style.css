@@ -268,6 +268,7 @@ p {
         margin-left: 15px;
     }
     .btn_one {
+        border: 0.7px solid #071633;
         width: 150px;
         height: 35px;
     }
@@ -326,7 +327,34 @@ header {
         background: url("../img/main_bg_mob.jpg");
         background-size: cover;
     }
-
+    .mobile_menu{
+        display: none;
+        position: absolute;
+        width: 80vw;
+        height: 80vw;
+        border-radius: 0 0 0 70vw;
+        background-color: #FEC641;
+        top: 0;
+        right: 0;
+        color: #071633;
+        z-index: 30;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: 50px 10% 0 0;
+    }
+    .mobile_menu button{
+        width: 50px;
+        background: inherit;
+    }
+    .main__link {
+        margin: 10px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile_menu a{
+        color: #071633;
+    }
     .main__menu {
         background: inherit;
     }
