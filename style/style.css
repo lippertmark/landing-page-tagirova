@@ -791,6 +791,10 @@ footer a {
 .return li {
     font-size: 35px;
 }
+.return .services__info{
+    margin-left: 0;
+    margin-right: 70px;
+}
 
 
 .debt li {
