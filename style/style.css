@@ -264,6 +264,9 @@ p {
 }
 
 @media only screen and (max-width: 899px) {
+    .align_ul {
+        margin-left: 15px;
+    }
     .btn_one {
         width: 150px;
         height: 35px;
@@ -321,6 +324,7 @@ header {
 @media only screen and (max-width: 899px) {
     .main {
         background: url("../img/main_bg_mob.jpg");
+        background-size: cover;
     }
 
     .main__menu {
@@ -578,151 +582,231 @@ footer a {
 }
 
 @media only screen and (max-width: 899px) {
-    .footer__row{
+    .footer__row {
         flex-direction: column;
     }
-    .footer__contacts{
+
+    .footer__contacts {
         margin-top: 30px;
     }
-    .footer__police{
+
+    .footer__police {
         margin-top: 30px;
     }
 }
 
 
+
+.main header {
+    z-index: 10;
+}
+
+.main__banner {
+    height: 100vh;
+    width: 500px;
+    background: rgba(7, 22, 51, 0.5);
+    position: absolute;
+    top: 0px;
+    right: 120px;
+    z-index: 5;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.main__banner p {
+    margin-top: 50px;
+    color: #ECECEC;
+}
+
+.main__title {
+    border-left: 4px solid #FEC641;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media only screen and (max-width: 899px) {
+    .main__banner{
+        height: auto;
+        width: 80%;
+        right: 0px;
+        bottom: 100px;
+        top: auto;
+    }
+}
+
+
+.benefit__item {
+    width: 20%;
+    text-align: center;
+}
+
+.benefit__item h4 {
+    margin-top: 25px;
+    line-height: 30px;
+}
+
+.benefit__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 0;
+
+}
+@media only screen and (max-width: 899px) {
+    .benefit__row{
+        flex-wrap: wrap;
+    }
     .benefit__item {
-        width: 20%;
-        text-align: center;
-    }
+        width: 45%;
 
-    .benefit__item h4 {
-        margin-top: 25px;
-        line-height: 30px;
     }
+}
 
-    .benefit__row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 100px 0;
-    }
 
+.feedback__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feedback__item {
+    border: 1px solid #000000;
+    width: 30%;
+    padding: 50px;
+}
+
+.feedback__avatar {
+    width: 100px;
+}
+
+.feedback__name {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.feedback__text {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 899px) {
     .feedback__row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .feedback__item {
-        border: 1px solid #000000;
-        width: 30%;
-        padding: 50px;
-    }
-
-    .feedback__avatar {
-        width: 100px;
-    }
-
-    .feedback__name {
-        font-family: 'Noto Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        margin-top: 20px;
-    }
-
-    .feedback__text {
-        font-family: 'Noto Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
-
-    .main header {
-        z-index: 10;
-    }
-
-    .main__banner {
-        height: 100vh;
-        width: 500px;
-        background: rgba(7, 22, 51, 0.5);
-        position: absolute;
-        top: 0px;
-        right: 120px;
-        z-index: 5;
-
-        padding: 50px;
-
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-
     }
-
-    .main__banner p {
-        margin-top: 50px;
-        color: #ECECEC;
+    .feedback__item {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 20px;
     }
-
-    .main__title {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .feedback__avatar {
+        width: 70px;
     }
+}
 
 
-    .services__title {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
 
-    .services__title {
-        border-left: 4px solid #FEC641;
-        padding-left: 30px;
-    }
 
+.services__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.services__title {
+    border-left: 4px solid #FEC641;
+    padding-left: 30px;
+}
+
+.services__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 150px;
+}
+.services__info{
+    margin-left: 70px;
+}
+
+.services__row img {
+    width: 35%;
+}
+
+@media only screen and (max-width: 899px) {
     .services__row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 150px;
+        flex-direction: column;
     }
-
     .services__row img {
-        width: 35%;
+        margin-top: 30px;
+        width: 80%;
     }
+    .services__info{
+        margin-left: 0px;
+    }
+}
 
+.registration li {
+    font-size: 35px;
+}
+
+.return li {
+    font-size: 35px;
+}
+
+
+.debt li {
+    color: #ECECEC;
+    font-size: 5px;
+}
+@media only screen and (max-width: 899px) {
     .registration li {
-        font-size: 35px;
+        font-size: 20px;
     }
-
     .return li {
-        font-size: 35px;
+        font-size: 20px;
     }
-
-
     .debt li {
-        color: #ECECEC;
-        font-size: 35px;
+        font-size: 20px;
     }
 
-    .debt {
-        margin-top: 150px;
+    .return img{
+        margin: 30px 10% 0 10%;
     }
+}
+.debt {
+    margin-top: 150px;
+}
 
+.debt .wrapper {
+    padding: 100px;
+    background: #1A1A27;
+    border-radius: 30px;
+}
+
+.debt p {
+    color: #ECECEC;
+}
+@media only screen and (max-width: 899px) {
     .debt .wrapper {
-        padding: 100px;
-        background: #1A1A27;
-        border-radius: 30px;
+        padding: 30px;
     }
-
-    .debt p {
-        color: #ECECEC;
+}
+.increase li {
+    font-size: 35px;
+}
+@media only screen and (max-width: 899px) {
+    .increase img{
+        margin: 30px 10% 0 10%;
     }
-
-    .increase li {
-        font-size: 35px;
-    }
+}
