@@ -25,7 +25,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta aliquet nisi, eget aliquet felis. Etiam id interdum dolor. Quisque tempus ullamcorper neque, vel commodo dolor ullamcorper nec.</p>
             </div>
             <header>
-                <img src="img/logo.svg" alt="">
+
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="" class="desktop">
+                </a>
                 <menu class="desktop">
                     <a href="who_is.html" class="main__link">О нас</a>
                     <a href="services.html" class="main__link">Услуги</a>
@@ -41,7 +44,7 @@
                         <a class="main__mail" href="mailto:yurist.tigrova@gmail.com">yurist.tigrova@gmail.com</a>
                     </div>
                 </div>
-                <button class="main__menu mobile">
+                <button class="main__menu mobile" onclick="showAnswer('mobile_menu')">
                     <img src="img/menu.svg" alt="меню">
                 </button>
             </header>
@@ -92,14 +95,14 @@
     </section>
     <section class="form" id="contact">
         <form action='send.php' method='POST' class="form__form">
-            <h2>В КАКИХ СЛУЧАЯХ МОЖНО ОТМЕНИТЬ ШТРАФ ?</h2>
-            <div class="pole mgt70">
+            <h2>Оставь свои контакты и мы с тобой свяжемся</h2>
+            <div class="pole mgt50">
                 <input name="name" type="text" placeholder="Ваше имя">
             </div>
-            <div class="pole mgt70">
+            <div class="pole mgt50">
                 <input name="phone" type="text" placeholder="Ваш номер телефона">
             </div>
-            <div class="pole mgt70">
+            <div class="pole mgt50">
                 <input name="question" type="text" placeholder="Ваш вопрос">
             </div>
             <div class="ch_pole">

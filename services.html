@@ -19,7 +19,9 @@
     <section class="main">
         <div class="wrapper">
             <header>
-                <img src="img/logo.svg" alt="">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="" class="desktop">
+                </a>
                 <menu class="desktop">
                     <a href="who_is.html" class="main__link">О нас</a>
                     <a href="services.html" class="main__link">Услуги</a>
@@ -35,7 +37,7 @@
                         <a class="main__mail" href="mailto:yurist.tigrova@gmail.com">yurist.tigrova@gmail.com</a>
                     </div>
                 </div>
-                <button class="main__menu mobile">
+                <button class="main__menu mobile" onclick="showAnswer('mobile_menu')">
                     <img src="img/menu.svg" alt="меню">
                 </button>
             </header>
@@ -58,9 +60,9 @@
                         <li><p>А может Вы решили переехать, сменить направление, расширить партнерство или просто внести небольшие правки. В этих вопросах мы также сможем решить все оперативно и профессионально.</p></li>
                         <li><p>При необходимости прекратить деятельность, мы сделаем все быстро и с минимальными затратами.</p></li>
                     </ul>
-                    <button class="btn_one mgt50">
+                    <a href="#contact" class="btn_one mgt50">
                         <p>Оставить заявку</p>
-                    </button>
+                    </a>
                 </div>
 
             </div>
@@ -79,9 +81,9 @@
                         <li><p>А может Вы решили переехать, сменить направление, расширить партнерство или просто внести небольшие правки. В этих вопросах мы также сможем решить все оперативно и профессионально.</p></li>
                         <li><p>При необходимости прекратить деятельность, мы сделаем все быстро и с минимальными затратами.</p></li>
                     </ul>
-                    <button class="btn_one mgt50">
+                    <a href="#contact" class="btn_one mgt50">
                         <p>Оставить заявку</p>
-                    </button>
+                    </a>
                 </div>
 
             </div>
@@ -100,9 +102,9 @@
                         <li><p>Оплата только после положительного результата</p></li>
                         <li><p>Фиксируем гарантии в договоре</p></li>
                     </ul>
-                    <button class="btn_one mgt50">
+                    <a href="#contact" class="btn_one mgt50">
                         <p>Оставить заявку</p>
-                    </button>
+                    </a>
                 </div>
                 <img src="img/return.jpg" alt="">
             </div>
@@ -122,9 +124,9 @@
                         <li><p>Оплата только после положительного результата</p></li>
                         <li><p>Фиксируем гарантии в договоре</p></li>
                     </ul>
-                    <button class="btn_one mgt50">
+                    <a href="#contact" class="btn_one mgt50">
                         <p>Оставить заявку</p>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -156,6 +158,9 @@
                         <li><p>снизить уплачиваемые вами налоги</p></li>
                         <li><p>уменьшить арендные платежи</p></li>
                     </ul>
+                    <a href="#contact" class="btn_one mgt50">
+                        <p>Оставить заявку</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -173,20 +178,23 @@
                         <li><p>снизить уплачиваемые вами налоги</p></li>
                         <li><p>уменьшить арендные платежи</p></li>
                     </ul>
+                    <a href="#contact" class="btn_one mgt50">
+                        <p>Оставить заявку</p>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     <section class="form" id="contact">
         <form action='send.php' method='POST' class="form__form">
-            <h2>В КАКИХ СЛУЧАЯХ МОЖНО ОТМЕНИТЬ ШТРАФ ?</h2>
-            <div class="pole mgt70">
+            <h2>Оставь свои контакты и мы с тобой свяжемся</h2>
+            <div class="pole mgt50">
                 <input name="name" type="text" placeholder="Ваше имя">
             </div>
-            <div class="pole mgt70">
+            <div class="pole mgt50">
                 <input name="phone" type="text" placeholder="Ваш номер телефона">
             </div>
-            <div class="pole mgt70">
+            <div class="pole mgt50">
                 <input name="question" type="text" placeholder="Ваш вопрос">
             </div>
             <div class="ch_pole">

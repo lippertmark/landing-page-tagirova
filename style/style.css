@@ -107,7 +107,7 @@ h1 {
     font-family: 'Scania Sans CY Headline';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 60px;
     color: #ECECEC;
 }
 
@@ -115,7 +115,7 @@ h2 {
     font-family: 'Scania Sans CY Headline';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22px;
     color: #FEC641;
     letter-spacing: 0.27em;
 }
@@ -124,7 +124,7 @@ h3 {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 28px;
 }
 
 h4 {
@@ -140,6 +140,7 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
+    color: #071633;
 }
 
 .text_bold {
@@ -365,7 +366,7 @@ header {
 
 
 .price .wrapper {
-    margin: 150px;
+    margin: 30px 150px 100px 150px;
 }
 
 .price__row {
@@ -535,15 +536,15 @@ header {
 
 .form__form {
     margin: 100px 0;
-    width: 600px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .btn_yel {
-    width: 321px;
-    height: 75px;
+    width: 231px;
+    height: 55px;
     background-color: #FEC641;
     display: flex;
     align-items: center;
@@ -563,7 +564,7 @@ header {
 
 input[type='text'] {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
 }
 
@@ -572,10 +573,11 @@ input[type='text'] {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .ch_pole p {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 899px) {
@@ -798,7 +800,12 @@ footer a {
     margin-left: 0;
     margin-right: 70px;
 }
-
+@media only screen and (max-width: 899px) {
+    .return .services__info{
+        margin-left: 0;
+        margin-right: 0px;
+    }
+}
 
 .debt li {
     color: #ECECEC;
@@ -843,5 +850,8 @@ footer a {
 @media only screen and (max-width: 899px) {
     .increase img{
         margin: 30px 10% 0 10%;
+    }
+    .increase li {
+        font-size: 20px;
     }
 }
