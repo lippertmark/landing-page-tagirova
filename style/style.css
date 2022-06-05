@@ -749,8 +749,10 @@ footer a {
 }
 
 
-
-
+.services {
+    background: url("../img/services_bg.jpg");
+    background-size: cover;
+}
 .services__title {
     display: flex;
     flex-direction: row;
