@@ -107,7 +107,7 @@ h1 {
     font-family: 'Scania Sans CY Headline';
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
     color: #ECECEC;
 }
 
@@ -115,7 +115,7 @@ h2 {
     font-family: 'Scania Sans CY Headline';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 25px;
     color: #FEC641;
     letter-spacing: 0.27em;
 }
@@ -124,14 +124,14 @@ h3 {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 h4 {
     font-family: 'Scania Sans CY Headline';
     font-style: normal;
     font-weight: 700;
-    font-size: 21px;
+    font-size: 15px;
     color: #071633;
 }
 
@@ -139,7 +139,7 @@ p {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .text_bold {
@@ -256,8 +256,8 @@ p {
 }
 
 .btn_one {
-    width: 321px;
-    height: 75px;
+    width: 231px;
+    height: 55px;
     border: 1px solid #071633;
     display: flex;
     align-items: center;
@@ -350,9 +350,10 @@ header {
         background: inherit;
     }
     .main__link {
-        margin: 10px 0 0 0;
+        margin: 15px 0 0 0;
         display: flex;
         flex-direction: column;
+        font-size: 16px;
     }
     .mobile_menu a{
         color: #071633;
@@ -801,7 +802,7 @@ footer a {
 
 .debt li {
     color: #ECECEC;
-    font-size: 5px;
+    font-size: 25px;
 }
 @media only screen and (max-width: 899px) {
     .registration li {
