@@ -330,6 +330,14 @@ header {
         background: url("../img/main_bg_mob.jpg");
         background-size: cover;
     }
+    .menu__row{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 30px;
+    }
     .mobile_menu{
         display: none;
         position: absolute;
