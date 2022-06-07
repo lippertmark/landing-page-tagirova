@@ -5,13 +5,17 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="js/show_more.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>Юрист Тигрова</title>
 </head>
 <body>
     <menu class="mobile mobile_menu" id="mobile_menu">
-        <button onclick="hideDiv('mobile_menu')">
-            <img src="img/bx-close.svg" alt="">
-        </button>
+        <div class="menu__row">
+            <img src="img/logo_blue.svg" alt="логотип">
+            <button onclick="hideDiv('mobile_menu')">
+                <img src="img/bx-close.svg" alt="">
+            </button>
+        </div>
         <a href="who_is.html" class="main__link">О нас</a>
         <a href="services.html" class="main__link">Услуги</a>
         <a href="#contact" class="main__link">Контакты</a>
@@ -103,7 +107,14 @@
                 <input name="phone" type="text" placeholder="Ваш номер телефона">
             </div>
             <div class="pole mgt50">
-                <input name="question" type="text" placeholder="Ваш вопрос">
+                <select id="quest" name="quest" >
+                    <option value="none" disabled selected><p>Какой вопрос вас интересует?</p></option>
+                    <option value="register"><p>Регистрационные действия для ООО, ИП, НКО, ДНТ и прочего</p></option>
+                    <option value="return"><p>Возврат дебиторской задолженности</p></option>
+                    <option value="debt"><p>Услуга списания долгов</p></option>
+                    <option value="increase"><p>Снижение кадастровой стоимости</p></option>
+                    <option value="other"><p>Другое</p></option>
+                </select>
             </div>
             <div class="ch_pole">
                 <input name="police_confidence" type="checkbox" placeholder="Согласен с политикой конфиденциальностью">

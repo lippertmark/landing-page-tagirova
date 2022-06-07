@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="js/show_more.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>Юрист Тигрова</title>
 </head>
 <body>
@@ -73,11 +74,11 @@
                 </div>
             </div>
             <div class="price__row">
-                <div class="price__item">
+                <div class="price__item" style="width: 80%">
                     <div class="price__title">
-                        <h2>Устная развернутая консультация</h2>
+                        <h2>Анализ предоставленных документов, устная консультация, письменное заключение</h2>
                     </div>
-                    <p class="mgt30">2 000 рублей</p>
+                    <p class="mgt30">5 000 рублей</p>
                     <a href="#contact" class="btn_one price_btn_one">
                         <p>Узнать больше</p>
                     </a>
@@ -88,7 +89,7 @@
     <section class="appeal">
         <div class="wrapper">
             <div class="appeal__title mgt70">
-                <h2>Устная развернутая консультация</h2>
+                <h2>Обжалование постановления</h2>
             </div>
             <p class="mgt50 mgb70">Обжалование постановлений о привлечении к административной ответственности по ст. 12.21.1
                 Кодекса Российской Федерации об административных правонарушениях</p>
@@ -106,7 +107,7 @@
                         <span class="text_bold">Конечно можно!</span><br>
                         Во избежание получения штрафа <span class="text_bold">за перегруз и негабарит</span> транспортного средства следует регулярно
                         проводить профилактику <span class="text_bold">технической и юридической стороны</span> вопроса.
-                        <br>
+                        <br><br>
                         Водитель должен четко знать все ограничения и внимательно следить за этим при погрузке машины.
                     </p>
                 </div>
@@ -209,7 +210,14 @@
                 <input name="phone" type="text" placeholder="Ваш номер телефона">
             </div>
             <div class="pole mgt50">
-                <input name="question" type="text" placeholder="Ваш вопрос">
+                <select id="quest" name="quest" >
+                    <option value="none" disabled selected><p>Какой вопрос вас интересует?</p></option>
+                    <option value="register"><p>Регистрационные действия для ООО, ИП, НКО, ДНТ и прочего</p></option>
+                    <option value="return"><p>Возврат дебиторской задолженности</p></option>
+                    <option value="debt"><p>Услуга списания долгов</p></option>
+                    <option value="increase"><p>Снижение кадастровой стоимости</p></option>
+                    <option value="other"><p>Другое</p></option>
+                </select>
             </div>
             <div class="ch_pole">
                 <input name="police_confidence" type="checkbox" placeholder="Согласен с политикой конфиденциальностью">
