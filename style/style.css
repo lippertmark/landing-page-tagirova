@@ -282,7 +282,8 @@ p {
 
 .main {
     background: url("../img/main_bg.jpg");
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: bottom left;
     height: 100vh;
 }
 
