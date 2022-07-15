@@ -134,6 +134,9 @@ h4 {
     font-size: 15px;
     color: #071633;
 }
+.iconify{
+    color: #FEC641;
+}
 
 p {
     font-family: 'Noto Sans';
@@ -326,7 +329,7 @@ header {
         margin: 0 10px;
     }
 }
-.main__contacts a {
+.main__contact a {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
@@ -693,13 +696,27 @@ footer a {
     align-items: center;
 }
 
+.feedback__text{
+    font-size: 14px;
+}
+
 @media only screen and (max-width: 899px) {
     .main__banner{
         height: auto;
-        width: 80%;
+        width: 90%;
         right: 0px;
-        bottom: 100px;
+        bottom: 20px;
         top: auto;
+    }
+    .main__banner p{
+        font-size: 16px;
+
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-height: 720px) {
+    .main__banner p{
+        font-size: 14px;
     }
 }
 
@@ -743,6 +760,9 @@ footer a {
     width: 30%;
     padding: 50px;
 }
+.team .feedback__item{
+    width: 47%;
+}
 
 .feedback__avatar {
     width: 100px;
@@ -760,7 +780,7 @@ footer a {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 10px;
 }
 @media only screen and (max-width: 899px) {
@@ -805,6 +825,10 @@ footer a {
 
 .services__row img {
     width: 35%;
+}
+.team .main__contact a{
+    font-weight: 700;
+    color: #071633;
 }
 
 @media only screen and (max-width: 899px) {
