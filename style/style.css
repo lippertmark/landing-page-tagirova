@@ -763,11 +763,17 @@ footer a {
 .team .feedback__item{
     width: 47%;
 }
-
+@media only screen and (max-width: 899px) {
+    .team .feedback__item{
+        width: 100%;
+    }
+}
 .feedback__avatar {
     width: 100px;
 }
-
+.feedback{
+    margin-bottom: 100px;
+}
 .feedback__name {
     font-family: 'Noto Sans';
     font-style: normal;
@@ -829,6 +835,9 @@ footer a {
 .team .main__contact a{
     font-weight: 700;
     color: #071633;
+}
+.feedback__avatar{
+    border-radius: 100px;
 }
 
 @media only screen and (max-width: 899px) {
